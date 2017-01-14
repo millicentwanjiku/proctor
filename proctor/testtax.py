@@ -1,6 +1,6 @@
-from unittest import TestCase
-
-class CalculateTaxTests(TestCase):
+import unittest
+from taxednet import calculate_tax
+class CalculateTaxTests(unittest.TestCase):
   def test_it_calculates_tax_for_one_person(self):
     result = calculate_tax({"James": 20500})
     self.assertEqual(result, {"James": 2490.0}, msg="Should return {'James': 2490.0} for the input {'James': 20500}")
