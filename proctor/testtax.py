@@ -1,5 +1,5 @@
 import unittest
-from taxednet import calculate_tax
+from tax import calculate_tax
 class CalculateTaxTests(unittest.TestCase):
   def test_it_calculates_tax_for_one_person(self):
     result = calculate_tax({"James": 20500})
