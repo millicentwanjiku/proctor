@@ -1,5 +1,5 @@
 import unittest
-import bankaccount
+from bankaccount import BankAccount, CurrentAccount, SavingsAccount
 
 class CurrentAccountTestCases(unittest.TestCase):
   def setUp(self):
