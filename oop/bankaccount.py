@@ -20,7 +20,7 @@ class SavingsAccount(BankAccount):
         else:
             return "Invalid deposit amount"
     def withdraw(self, withdraw):
-        if ((self.balance - withdraw) > 0) and ((self.balance - withdraw) < 500): 
+        if((self.balance - withdraw) > 0) and ((self.balance - withdraw) < 500): 
             return "Cannot withdraw beyond the minimum account balance"
         elif (self.balance - withdraw) < 0:
             return "Cannot withdraw beyond the current account balance"
