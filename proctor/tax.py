@@ -1,4 +1,4 @@
-"""" Calculating tax """
+""" Calculating tax """
 def calculate_tax(taxinfo):
     """
     A function calculate_tax that takes an argument as dictionary
