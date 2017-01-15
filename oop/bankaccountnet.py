@@ -26,7 +26,7 @@ class SavingsAccount(BankAccount):
             return "Invalid withdraw amount"
         else:
             self.balance -= amount
-            return self.balance 
+            return self.balance
 class CurrentAccount(BankAccount):
     """Implementing class Current account"""
     def __init__(self):
