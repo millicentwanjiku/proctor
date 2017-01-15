@@ -1,25 +1,22 @@
+"""OBJECT ORIENTED LAB"""
 class BankAccount(object):
-
+    """Bankaccount class with methods withdraw and deposit"""
     def __init__(self):
         pass
-
     def withdraw():
         pass
     def deposit():
         pass
-
 class SavingsAccount(BankAccount):
-
+    """Class saving account that inherits from bank account"""
     def __init__(self):
         self.balance = 500
-
     def deposit(self, amount):
-        if (amount < 0):
+        if amount < 0:
             return "Invalid deposit amount"
         else:
             self.balance += amount
             return self.balance
-
     def withdraw(self, amount):
         if ((self.balance - amount) > 0) and ((self.balance - amount) < 500):
             return "Cannot withdraw beyond the minimum account balance"
@@ -30,21 +27,16 @@ class SavingsAccount(BankAccount):
         else:
             self.balance -= amount
             return self.balance 
-
 class CurrentAccount(BankAccount):
-
+    """Implementing class Current account"""
     def __init__(self):
         self.balance = 0
-
-
     def deposit(self, amount):
         if amount < 0:
             return "Invalid deposit amount"
         else:
             self.balance += amount
             return self.balance
-
-
     def withdraw(self, amount):
         if amount < 0:
             return "Invalid withdraw amount"
