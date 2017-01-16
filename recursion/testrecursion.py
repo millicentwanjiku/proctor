@@ -1,5 +1,5 @@
 import unittest
-from recursion import replicate_iter, replicate_recur
+from recursionnet import replicate_iter, replicate_recur
 
 class ReplicateIterTestCases(unittest.TestCase):
   def test_it_returns_a_list_of_replicated_numbers(self):
